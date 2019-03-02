@@ -71,7 +71,7 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height:76vh;
+  height:75vh;
 }
 
 .griditem2 {
@@ -80,6 +80,11 @@ li a:hover {
 
 .griditem3 {
   grid-area: sidebar;
+  background-image: url("../images/pewdiepie.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:23vh;
 }
 
 .griditem4 {
