@@ -1,9 +1,9 @@
 body {
   background-image: url("../images/Background.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
-  height: 100vh;
+  height:100vh;
   }
   h1 {
   background-image: url("../images/Background.jpg");
@@ -13,7 +13,7 @@ body {
   }
   .Naem{
     color:green;
-    background:yellow;
+    background: transparent;
   }
 body {font-family: Arial;}
 ul {
@@ -42,73 +42,51 @@ li a {
 li a:hover {
   background-color: yellow;
 }
-.grid-container {
+
+[class^="griditem"] {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  background-color: blue;
+}
+
+.grid-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 6fr));
-  padding: 5px;
-  align-items: left;
+  grid-template-columns: auto 150px auto;
+  grid-template-rows: 500px 150px 300px;
+  grid-template-areas: "header header header"				
+                       "nav main sidebar"
+                       "nav footer footer";
+  grid-auto-flow: dense;
   grid-gap: 10px;
-}
-.one {
-  background-color: yellow;
-  border:1px solid black;
-  padding: 4rem 2rem;
-  font-size:25px;
-  text-allign:left;
-  color:white;
-}
-.two {
-  background-color: black;
-  border:1px solid black;
-  padding: 100px;
-  font-size:25px;
-  text-allign:left;
-  color:white;
-}
-.three {
-  background-color: black;
-  border:1px solid black;
-  padding: 100px;
-  font-size:25px;
-  text-allign:left;
-  color:white;
-}
-.four {
-  background-color: black;
-  border:1px solid black;
-  padding: 100px;
-  font-size:25px;
-  text-allign:left;
-  color:white;
-}
-.five {
-  background-color: black;
-  border:1px solid black;
-  padding: 100px;
-  font-size:25px;
-  text-allign:left;
-  color:white;
-}
-.six {
-  background-color: black;
-  border:1px solid black;
-  padding: 100px;
-  font-size:25px;
-  text-allign:left;
-  color:white;
+  height: 10vh;
 }
 
-
-
-
-
-
-
-
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
+.griditem1 {
+  grid-area: header;
+  background-image: url("../images/Inter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:76vh;
 }
+
+.griditem2 {
+  grid-area: main;
+}
+
+.griditem3 {
+  grid-area: sidebar;
+}
+
+.griditem4 {
+  grid-area: nav;
+}
+
+.griditem5 {
+  grid-area: footer;
+}
+
