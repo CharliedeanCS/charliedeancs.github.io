@@ -1,0 +1,88 @@
+body {
+  background-color:white;
+  margin:0;
+  padding:0;
+  }
+  h1 {
+  background-color:white;
+  }
+  .name{
+    color:yellow;
+  }
+  .Naem{
+    color:green;
+    background: transparent;
+  }
+body {font-family: Arial;}
+ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width : 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+li a:hover {
+  background-color: yellow;
+}
+
+.images {
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.images>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+   	
+}
+[class^="griditem"] {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+}
+
+.grid-container {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+}
+
+.griditem1 { 
+}
+.griditem2 {
+	border-left-style: dashed;
+}
+
+.griditem3 {
+	border-left-style: dashed;
+}
+
+.griditem4 {
+	border-left-style: dashed;
+}
+
+.griditem5 {
+	border-left-style: dashed;
+}
+
