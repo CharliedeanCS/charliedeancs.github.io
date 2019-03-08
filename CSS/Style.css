@@ -6,108 +6,71 @@ body {
   h1 {
   background-color:white;
   }
-  .name{
-    color:yellow;
-  }
-  .Naem{
-    color:green;
-    background: transparent;
-  }
-body {font-family: Arial;}
-.images {
-  padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
+ .Image{
+     position: absolute;
+     left: 10px;
+     top: 1px;
+     z-index: 1;
+ }
+ .Ele{
+     position: absolute;
+     right:10px;
+     top: -10px;
+     z-index: 1;
+ }
+body {font-family: Arial;color;}
 .images>img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-   	
+
 }
+
+.button {
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.button2{
+  background-color: #ffff00;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
 [class^="griditem"] {
   color: black;
   text-align: center;
   font-size: 3rem;
   background-color: #49a2da;
   padding:10px;
+  font-size:3vw;
 }
 
 .grid-container {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
-    grid-template-areas: 'myArea myArea Side';
+    grid-template-areas:
+      'contact logo logo logo menu';
 }
 
-.griditem1 { 
-	gird-area:myArea;
+.griditem1 {
+  grid-area: contact;
+  text-align:right;
 }
 .griditem2 {
 	border-left-style: dashed;
-	grid-area:Side;
+  border-right-style: dashed;
+  grid-area: logo;
 }
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
+.griditem3 {
+    grid-area: menu;
 }
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
