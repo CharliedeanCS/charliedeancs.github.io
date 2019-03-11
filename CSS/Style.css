@@ -6,38 +6,35 @@ body {
   h1 {
   background-color:white;
   }
+ .Menu{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
  .Image{
-     position: absolute;
-     left: 10px;
-     top: 1px;
-     z-index: 1;
- }
- .Ele{
-     position: absolute;
-     right:10px;
-     top: -10px;
-     z-index: 1;
+    position: absolute;
+    z-index: 3;
+    left: 100px;
+    top: 0px;
+    -webkit-transform: rotate(355deg);
+    -moz-transform: rotate(355deg);
+    -o-transform: rotate(355deg);
+    -ms-transform: rotate(355deg);
+    transform: rotate(355deg);
  }
 body {font-family: Arial;color;}
-.images>img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 
-}
-
-.button {
+.button{
   background-color: white;
   border-radius: 25px;
   border: none;
   padding: 15px 25px;
-  text-align: center;
+  text-align: right;
   font-size: 2vw;
   cursor: pointer;
 }
 .button2{
-  background-color: #ffff00;
+  background-color: white;
   border-radius: 25px;
   border: none;
   padding: 15px 25px;
@@ -51,15 +48,15 @@ body {font-family: Arial;color;}
   text-align: center;
   font-size: 3rem;
   background-color: #49a2da;
-  padding:10px;
   font-size:3vw;
+  padding:5px;
+  border-color:white;
 }
+
 
 .grid-container {
     display:grid;
-    align-items: center;
-    grid-template-areas:
-      'contact logo logo logo menu';
+    grid-template-areas: "contact contact contact contact contact contact logo logo logo logo logo menu menu";
 }
 
 .griditem1 {
@@ -67,10 +64,139 @@ body {font-family: Arial;color;}
   text-align:right;
 }
 .griditem2 {
-	border-left-style: dashed;
+  border-left-style: dashed;
   border-right-style: dashed;
   grid-area: logo;
+  text-align:right;
 }
 .griditem3 {
-    grid-area: menu;
+   grid-area:menu;
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  color: green;
+  background-color: inherit;
+  font: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: blue;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: white;
+  height: 500px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color:blue;
+  font-size:3vh;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+  .Image{
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+    top: 0px;
+    -webkit-transform: rotate(355deg);
+    -moz-transform: rotate(355deg);
+    -o-transform: rotate(355deg);
+    -ms-transform: rotate(355deg);
+    transform: rotate(355deg);
+ }
+}
+
+
+
+
+
+
+[class^="image-item"] {
+  color: black;
+  text-align: center;
+  font-size:3vw;
+  padding:5px;
+  border-color:white;
+}
+
+
+.image-container {
+    display:grid;
+    grid-template-areas: "pic pic pic  pic pic pic pic pic pic pic pic pic pic pic pic info";
+}
+
+.image-item1 {
+  grid-area: pic;
+  text-align:right;
+  background-color: black;
+}
+.image-item2 {
+  border-left-style: dashed;
+  grid-area: info;
+  text-align:center;
+  background-color: #49a2da;
+  max-width:100%;
+}
+
+
+.images>img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+
+
+

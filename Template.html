@@ -58,53 +58,5 @@
   </div> 
    </div>
  </section>
-
-
-<section class="image-container">
-  <div class="image-item1">
-	<div class="images">
-		<img  class="CTImages" src="./images/IslandHop.jpg" alt="CampThailand">
-        	<img  class="CTImages" src="./images/campele.jpg" alt="CampThailand">
-        	<img  class="CTImages" src="./images/IslandHop.jpg" alt="CampThailand">
-	</div>
-  </div>
-  <div class="image-item2">
-  	<p class="CTText">This is a Island Hopdddddddddddddddddddddd d you will liek this</p>
-  	<p class="CTText">This is an elepant dddddddddddddddddddddddd dddddddddddddddd</p>
-	<p class="CTText">This is Island Hop again lel dddddddddddddddddd ddddddddddd</p>
-  </div>
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("CTImages");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 3000); 
-}
-</script>
-
-<script>
-var myIndexA = 0;
-car();
-
-function car() {
-  var l;
-  var y = document.getElementsByClassName("CTText");
-  for (l = 0; l < y.length; l++) {
-    y[l].style.display = "none";  
-  }
-  myIndexA++;
-  if (myIndexA > y.length) {myIndexA = 1}    
-  y[myIndexA-1].style.display = "block";  
-  setTimeout(car, 3000); 
-}
-</script>
+</body>
+</html>
