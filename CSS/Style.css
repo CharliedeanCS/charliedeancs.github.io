@@ -175,7 +175,8 @@ body {font-family: Arial;color;}
 
 .image-container {
     display:grid;
-    grid-template-areas: "pic pic pic  pic pic pic pic pic pic pic pic pic pic pic pic info";
+    grid-template-areas: "pic pic pic  pic pic pic pic pic info";
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
 
 .image-item1 {
@@ -188,15 +189,14 @@ body {font-family: Arial;color;}
   grid-area: info;
   text-align:center;
   background-color: #49a2da;
-  max-width:100%;
 }
 
 
-.images>img{
+.image-item1>img{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:100%;
 
+}
 
 
