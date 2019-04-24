@@ -14,6 +14,14 @@ body {
   }
 
 
+
+
+
+
+
+
+
+
   .checked {
   color: orange;
 }
@@ -380,6 +388,11 @@ h9{
   margin-top:-100px;
 }
 
+.megasection{
+  margin-top:-100px;
+    background: url("../images/pattern.png");
+}
+
 
 
 .Offering{
@@ -391,6 +404,7 @@ h9{
 	background-color:white;
 	text-align:center;
 	height:30vh;
+  padding-bottom:250px;
 }
 
 .CaraOffer>img{
@@ -399,11 +413,11 @@ h9{
   margin-right: auto;
 }
 .CaraOffer>p{
-	font-size:1.3vh;
   color:black;
 }
 h6{
   color:black;
+  font-size:2vh;
 }
 
 
@@ -413,7 +427,7 @@ h6{
 
 .Tours {
     display:grid;
-    grid-template-areas: "pic1 pic2 pic3";
+    grid-template-areas: "pic1  pic2 pic3";
     margin-left: 430px;
     margin-right:430px;
 }
@@ -429,14 +443,14 @@ h6{
     grid-area:pic3;
 }
 
+
 .Tourpicture{
   width:20vh;
   height:15vh;
-  border:5px solid black;
+  border:2.5px solid white;
 }
 
 .TourText{
-  font-size: 1.5vh;
   color:white;
 }
 
@@ -1310,7 +1324,11 @@ h26{
   height:50vh;
   width:80vh;
 }
-
+.Video1{
+  height:50vh;
+  width:80vh;
+  border:solid #49a2da 5px;
+}
 h27{
   font-size:4vh;
 }
@@ -1403,7 +1421,20 @@ h27{
   grid-area:AText;
   width:100%;
   margin-top:-1vh;
-  background-color:yellow;
+  background-color:rgba(255,255,0,0.1);
+}
+.AT-item6{
+  grid-area:AText;
+  width:100%;
+  margin-top:-1vh;
+  background-color:rgba(73,162,218,0.1);
+}
+
+.AT-item5{
+  grid-area:AText;
+  width:100%;
+  margin-top:-1vh;
+  background-color:rgba(255,255,255,0.1);
 }
 
 .ATimg{
@@ -1415,12 +1446,27 @@ h27{
   background-color:#49a2da;
   margin-top:-30px;
 }
+.Blue-Back2{
+  background-color:rgba(73,162,218,0.7);
+}
 .white-back{
   background-color:white;
 }
 
+.white-back3{
+  background-color:rgba(255,255,255,0.7);
+}
+
 .yellow-back{
   background-color:yellow;
+}
+
+.yellow-back3{
+  background-color:rgba(255,255,0,0.7);
+}
+
+.yellow-back4{
+  background-color:rgba(255,255,0,0.75);
 }
 
 h28{
@@ -1674,18 +1720,61 @@ h33{
   margin-right:430px;
 }
 
+/* This will give U18 Students
+the opportunity to partake in our Camp Thailand U18’s program - a stunning summer adventure in the
+midst of Asia.*/
+/*Page Important*/
 
+.ISHero30{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  text-align: center;
 
-
-
-
+  background-image: url("../images/Over18's.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 /*Camp Thailand is offering you(and other young people like you!)an amazing opportunity within South East Asia. Our three week programme will provide you the chance to experience an incredible adventure in one of the most beautiful countries in the Pacific. Our locations,each with their own unique and stunning features, are amongst the most incredible in all of Asia - ranging from the Idyllic Camp Phuket and Camp Chiang Mai to the adventure-filled Backpackers Party and Camp Elephant - with each presenting their own activities ranging from island hopping through to temple touring. This acts as the backdrop for your personal growth, building of crucial skills, and making of phenomenal new friendships - all accomplished whilst making a positive impact on the world around you!. So, if you feel you're up to the challenge, then apply today!*/
 
 
+/*Footer Media*/
 
+.Media-container {
+  display: grid;
+  grid-template-areas: "M1 M2 M3 M4";
+}
 
+.MediaI{
+  height:8vh;
+  width:8vh;
+}
+
+.Media-item1 {
+  grid-area:M1;
+  text-align: center;
+}
+
+.Media-item2 {
+  grid-area:M2;
+  text-align: center;
+}
+
+.Media-item3 {
+  grid-area:M3;
+  text-align: center;
+}
+
+.Media-item4 {
+  grid-area:M4;
+  text-align: center;
+}
 
 @media screen and (max-width: 1450px){
   .Activ1{
@@ -1761,6 +1850,14 @@ h33{
     width:60%;
   }
   .AT-item4{
+    grid-area:AText;
+    width:60%;
+  }
+  .AT-item5{
+    grid-area:AText;
+    width:60%;
+  }
+  .AT-item6{
     grid-area:AText;
     width:60%;
   }
@@ -1915,6 +2012,14 @@ h33{
     grid-area:AText;
     width:100%;
   }
+  .AT-item5{
+    grid-area:AText;
+    width:100%;
+  }
+  .AT-item6{
+    grid-area:AText;
+    width:100%;
+  }
   .AT-item1{
     grid-area:Aimage;
     width:100%;
@@ -1924,6 +2029,10 @@ h33{
     width:100%;
   }
   .Video{
+    height:30vh;
+    width:45vh;
+  }
+  .Video1{
     height:30vh;
     width:45vh;
   }
@@ -2128,5 +2237,8 @@ h20{
   .TeachIMG{
     height:38vh;
     width:38vh;
+  }
+  .Intro>p{
+    font-size:2.5vh;
   }
 }
